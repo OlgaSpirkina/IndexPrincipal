@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style: none;
+  /*width: 100%;*/
+  background-color: #7fb5b5;
+  text-align: center;
+  padding: 0;
+  /*margin: 0 auto;*/
+}
+nav li {
+    display: inline-block;
+    width: 24%;
+    height: 100px;
+    line-height: 50px;
+  }
+
+
+nav ul li{
+  font-size: 200%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  transition: .5s background-color;
+  font-size: 50%;
+}
+
+nav a:hover {
+  width: 400%;
+  background-color: #005f5f;
+}
+
+/* sous-menu */
+nav li ul {
+    position: absolute;
+    display: none;
+    margin: 2%;
+    width: 20%;
+}
+
+nav li:hover ul {
+   display: block;
+   width: inherit;
+}
+
+nav li ul li {
+   display: block;
+   width: inherit;
+ }
